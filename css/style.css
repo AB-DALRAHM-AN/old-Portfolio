@@ -156,7 +156,7 @@ ul {
   -o-border-radius: 7px;
 }
 .header .menu li:hover {
-  background-color: rgb(255 255 255 / 8%);
+  background-color: rgb(255 255 255 / 15%);
 }
 .header .menu li a {
   text-decoration: none;
@@ -176,16 +176,16 @@ ul {
   .header .menu {
     display: none;
     flex-direction: column;
-    background-color: rgba(11, 11, 11, 0.458);
+    background-color: rgba(0, 0, 0, 0.950);
     position: absolute;
-    padding-bottom: 20px;
-    top: 70px;
+    padding: 20px 0px;
+    top: 57px;
     right: 0;
     width: 100%;
     z-index: 9999;
     opacity: 0;
     transform: translateY(-10px);
-  }
+}
 
   .header .active {
     display: flex;
@@ -196,7 +196,17 @@ ul {
   .header .menu li {
     padding: 10px;
     text-align: center;
-  }
+    justify-content: center;
+    border-radius: 10px;
+    width: 80%;
+    background-color: rgb(255 255 255 / 8%);
+    font-size: 17px;
+    font-weight: 600;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
 }
 /* end header */
 
@@ -345,6 +355,18 @@ ul {
     padding: 5px 10px;
   }
 }
+
+@media (max-width: 680px) {
+  .content-main.blur-content {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+}
+  .footer.blur-content {
+    filter: blur(1px);
+    -webkit-filter: blur(1px)  ;
+}
+}
+
 .footer {
   background-color: #000;
   color: #ccc;

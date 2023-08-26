@@ -9,9 +9,9 @@ var typed = new Typed(".text", {
 // Toggle the menu on burger icon click
 
 document.addEventListener("DOMContentLoaded", function() {
-  const burgerIcon = document.querySelector('.burger-icon');
-  const menu = document.querySelector('.menu');
-  const body = document.querySelector('body');
+  let burgerIcon = document.querySelector('.burger-icon');
+  let menu = document.querySelector('.menu');
+  let body = document.querySelector('body');
 
   burgerIcon.addEventListener('click', function(e) {
     e.stopPropagation(); // Prevent click event from propagating to body
@@ -43,5 +43,14 @@ hiddenElements.forEach(el => {
 }
 );
 
+// blur effect
+let burgerIcon = document.querySelector('.burger-icon');
+let footerCotent = document.querySelector('.footer');
+let contentContainer = document.querySelector('.content-main');
+
+burgerIcon.addEventListener('click', () => {
+  contentContainer.classList.toggle('blur-content');
+  footerCotent.classList.toggle('blur-content');
+});
 
 

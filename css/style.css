@@ -45,60 +45,6 @@ ul {
   padding: 8px 12px;
   border-radius: 7px;
 }
-.hidden {
-  opacity: 0;
-  transition: all 2s;
-  filter: blur(2px);
-  transform: translateX(-100px);
-  -webkit-transition: all 2s;
-  -moz-transition: all 2s;
-  -ms-transition: all 2s;
-  -o-transition: all 2s;
-  -webkit-filter: blur(2px);
-  -webkit-transform: translateX(-100);
-  -moz-transform: translateX(-100);
-  -ms-transform: translateX(-100);
-  -o-transform: translateX(-100);
-}
-.show {
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateX(0px);
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -o-transform: translateX(0px);
-}
-.media .contacts .show:nth-child(2) {
-  transition-delay: 500ms;
-}
-.media .contacts .show:nth-child(3) {
-  transition-delay: 1000ms;
-}
-.container-proj .show:nth-child(2) {
-  transition-delay: 500ms;
-}
-.container-proj .show:nth-child(4) {
-  transition-delay: 500ms;
-}
-.container-proj .show:nth-child(6) {
-  transition-delay: 500ms;
-}
-.about-cont .show:nth-child(2) {
-  transition-delay: 500ms;
-}
-.about-cont .show:nth-child(3) {
-  transition-delay: 1000ms;
-}
-.about-cont .show:nth-child(4) {
-  transition-delay: 1500ms;
-}
-.content-contact .contacts .show:nth-child(2) {
-  transition-delay: 500ms;
-}
-.content-contact .contacts .show:nth-child(3) {
-  transition-delay: 1000ms;
-}
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -310,7 +256,7 @@ ul {
   margin-top: 20px;
   gap: 20px;
   margin: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
   margin-top: 10px;
   border-radius: 6px;
   padding: 10px 20px;
@@ -319,6 +265,10 @@ ul {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 .content-main .media .contacts a:hover {
   background-color: rgb(255 255 255 / 15%);
@@ -404,7 +354,7 @@ ul {
 
 .about .main-header {
   color: white;
-  padding: 40px 90px 20px;
+  padding: 90px 90px 0 50px;
 }
 .about .main-header i {
   color: var(--main-color);
@@ -454,6 +404,10 @@ ul {
 }
 
 @media (max-width: 1300px) {
+  .about .main-header {
+    padding: 40px 60px 20px 40px;
+    text-align: center;
+  }
   .about-me {
     overflow-y: hidden;
     display: flex;

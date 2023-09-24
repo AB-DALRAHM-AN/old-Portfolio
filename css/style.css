@@ -2,25 +2,12 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: #000;
   margin: 0;
   padding: 0;
 }
 :root {
-  /*#
-  Royal Blue: #4169E1
-  Crimson Red: #DC143C 
-  Golden Yellow: #FFD700 
-  Teal: #008080 
-  Mustard Yellow: #FFDB58 
-  Orange Cream: #FFD700
-  Slate Blue: #6A5ACD 
-  Amber: #FFBF00 
-  Turquoise: #40E0D0 
-  Deep Purple: #800080
-  Sky Blue: #87CEEB 
-  Plum: #DDA0DD */
   --main-color: #00ff7f;
   --grey-color: #888;
 }
@@ -92,37 +79,37 @@ ul {
   align-items: center;
   gap: 20px;
 }
-.header .menu li {
+.header .menu li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
   padding: 8px 12px;
   border-radius: 7px;
-  list-style: none;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
 }
-.header .menu li:hover {
+.header .menu li a:hover {
   background-color: rgb(255 255 255 / 15%);
 }
-.header .menu li a {
-  text-decoration: none;
-  color: white;
-}
-
 .burger-icon {
   display: none;
 }
-
 @media (max-width: 680px) {
   .header .burger-icon {
     display: block;
     color: white;
   }
-
   .header .menu {
     display: none;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: transparent;
     position: absolute;
     padding: 20px 0px;
     top: 57px;
@@ -132,26 +119,23 @@ ul {
     opacity: 0;
     transform: translateY(-10px);
   }
-
-  .header .active {
+  .header .menu.active {
     display: flex;
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
+    z-index: 9999;
+    background-color: #000000db;
   }
-
   .header .menu li {
-    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .header .menu li a {
+    width: 100%;
     text-align: center;
-    justify-content: center;
-    border-radius: 10px;
-    width: 80%;
-    background-color: rgb(255 255 255 / 8%);
-    font-size: 17px;
-    font-weight: 600;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    padding: 10px 240px;
+  }
+  .header .menu.active a.active {
+    background-color: rgb(255 255 255 / 15%);
   }
 }
 @media (max-width: 680px) {
@@ -179,7 +163,7 @@ ul {
   flex-direction: column;
   padding: 70px 20px;
   justify-content: center;
-  background-color: #000;
+  background-color: transparent
 }
 .content-main .name {
   opacity: 1;
@@ -341,7 +325,7 @@ ul {
 
 /* Start About Page */
 .about {
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
   min-height: calc(100vh - 147px);
 }
 
@@ -433,7 +417,7 @@ ul {
 .content-proj {
   position: relative;
   min-height: calc(100vh - 147px);
-  background-color: rgb(0, 0, 0);
+  background-color: transparent;
 }
 .content-proj .header-text {
   color: white;
@@ -583,7 +567,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: transparent;
 }
 .content-market h1 {
   font-size: 36px;
@@ -601,7 +585,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: transparent;
 }
 .content-blog h1 {
   font-size: 36px;
@@ -619,7 +603,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: transparent;
 }
 .content-contact h1 {
   font-size: 40px;

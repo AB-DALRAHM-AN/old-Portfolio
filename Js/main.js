@@ -10,7 +10,7 @@ let contactContent = document.querySelector(".content-contact");
 
 // scroll effect gsap
 document.addEventListener("DOMContentLoaded", function() {
-  gsap.from(".content-main .name .hey", 1.5, { opacity: 0, x: -100, delay: 0.4 });
+  gsap.from(".content-main .name .hey", 1.5, { opacity: 0, y: -100, delay: 0.4 });
   gsap.from(".content-main .name .myName", 1.5, { opacity: 0,  x: -100, delay: 0.5 });
   gsap.from(".content-main .about1", 1.5, { opacity: 0, x: -100, delay: 0.6 });
   gsap.from(".content-main .about2", 1.5, { opacity: 0, x: -100, delay: 0.8 });

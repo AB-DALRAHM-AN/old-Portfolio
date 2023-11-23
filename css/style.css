@@ -205,6 +205,7 @@ ul {
   margin: 0;
   margin-top: 10px;
 }
+
 .content-main .about1 h2 span {
   color: white;
 }
@@ -520,6 +521,12 @@ ul {
 }
 .content-proj .container-proj .card .proj-text .technology span .js {
   color: #f0db4f;
+}
+.content-proj .container-proj .card .proj-text .technology span .fa-react {
+  color: #61dbfb;
+}
+.content-proj .container-proj .card .proj-text .technology span .tailwind {
+  color: #06b6d4;
 }
 .content-proj .container-proj .card .proj-text hr {
   margin: 0;

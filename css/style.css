@@ -528,6 +528,9 @@ ul {
 .content-proj .container-proj .card .proj-text .technology span .tailwind {
   color: #06b6d4;
 }
+.content-proj .container-proj .card .proj-text .technology span .vite {
+  color: #646cff;
+}
 .content-proj .container-proj .card .proj-text hr {
   margin: 0;
   margin-top: 10px;
